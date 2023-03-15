@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jerry Applegarth">
+        <meta name="description" content="Learning HTML">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Roboto:wght@400;700;900&display=swap"
+            rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Startup</title>
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="/dist/styles.css">
+    </head>
+
+    <body class="  font-poppins bg-slate-600">
+        <section class="flex flex-col text-center w-auto ">
+            <h1 class="text-8xl text-amber-700 mt-20 mb-12">ToDo List</h1>
+            
+            <div class="text-xl border-2 border-amber-600 mx-20  bg-slate-800 text-white ">
+                <form action="" id="form" class="p-4 shadow-xl  shadow-amber-600">
+                    <input type="text" class="input rounded-md h-10 " id="input" placeholder="Enter Your ToDos" autocomplete="off">
+                    <ul class="todos p-8" id="todos">
+                        <div class="">
+                        <li class="border-t border-slate-400 cursor-pointer text-2xl pt-4 px-8 completed">My First ToDo</li>
+                        <li class="border-t border-slate-400 cursor-pointer text-2xl pt-4 px-8 completed">My Second ToDo</li>
+                        </div>
+                    </ul>
+                </form>
+            </div>
+            <br>
+            <small class="text-white">* Left click to toggle ToDo completed. <br> * Right click to delete ToDo</small>
+        </section>
+        <script type="module" src="/dist/script.js"></script>
+    </body>
+</html>
